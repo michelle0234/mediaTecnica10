@@ -1,0 +1,49 @@
+/******************************************************************************
+Autor: any michelle
+fecha: 2024-05-23
+descripcion: un docente requiere de un sistema de notas donde recibe 4 
+calificaciones generando un promedio y luego determinado si gana o pierde.
+si su promedio es menor a 3 pierde
+si es mayor gana
+si tiene un promedio mayor a 4.5 emitir mensaje:
+"Felicidades, te has ganado una beca"
+*******************************************************************************/
+using System;
+class ProgramaDescuentos {
+ 
+        static void Main() {
+ 
+     
+     double nota1;
+     double nota2;
+     double nota3; 
+     double nota4;
+     
+     Console.WriteLine("Valor de nota 1");
+     Console.WriteLine("Nota 1: ");
+     nota1 = Convert.ToDouble(Console.ReadLine());
+     
+     Console.WriteLine("Valor de nota 2");
+     nota2 = Convert.ToDouble(Console.ReadLine());
+     
+     Console.WriteLine("Valor de nota 3");
+     nota3 = Convert.ToDouble(Console.ReadLine());
+     
+     Console.WriteLine("Valor de nota 4");
+     nota4 = Convert.ToDouble(Console.ReadLine());
+     
+     double promedio = (nota1 + nota2 + nota3 + nota4) /4;
+     
+     if (promedio <=2.99){
+      Console.WriteLine("perdio"); 
+     }
+     
+     if(promedio >=3){
+      Console.WriteLine("ganaste");
+     }
+      
+       if(promedio >= 4.5){
+       Console.WriteLine("Felicidades, te has ganado una beca");
+       }
+     }
+   }      
